@@ -8,30 +8,34 @@
 <body>
     <header>
         <nav>
+            <a href="index.html"><img src="img/logo.png" alt="Логотип города Седона" width="140" height="72"></a>
             <ul>
                 <li><a href="#">Информация</a></li>
                 <li><a href="#">Фото и видео</a></li>
                 <li><a href="#">Карта штата</a></li>
                 <li><a href="#">Гостиницы</a></li>
             </ul>
-            <a href="index.html"><img src="img/logo.png" alt="Логотип города Седона" width="140" height="72"></a>
         </nav>
     </header>
 
     <main>
         <h1 class="visually-hidden">Сайт города Седона</h1>
-        <img src="img/intro.png" alt="Добро пожаловать в Седону!" width="459" height="353">
-        <b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <div>
+            <img src="img/intro.png" alt="Добро пожаловать в Седону!" width="459" height="353">
+            <b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
 
         <section>
             <h2 class="visually-hidden">Преимущества города Седона</h2>
             <ul>
                 <li>
                     <div>
-                        <b>Настоящий городок</b>
-                        <span>№1</span>
-                        <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                        <div>
+                            <b>Настоящий городок</b>
+                            <span>№1</span>
+                            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                        </div>
                         <img src="img/city-photo.jpg" alt="Фото города Седона" width="800" height="256">
                     </div>
                     <ul>
@@ -50,9 +54,11 @@
                     </ul>
                 </li>
                 <li>
-                    <b>Там есть мост дьявола</b>
-                    <span>№2</span>
-                    <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                    <div>
+                        <b>Там есть мост дьявола</b>
+                        <span>№2</span>
+                        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                    </div>
                     <img src="img/devils-bridge.jpg" alt="Фото моста Дьявола" width="800" height="256">
                 </li>
                 <li>
@@ -78,6 +84,36 @@
             <b>Заинтересовались?</b>
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
             <a href="booking-form.html">Поиск гостиницы в Седоне</a>
+            <div class="modal">
+                <section>
+                    <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+                    <form action="https://htmlacademy.ru/intensive/htmlcss" method="get">
+                        <p>
+                            <label for="arrival-date">Дата заезда:</label>
+                            <input id="arrival-date" type="text" name="arrival-date" placeholder="24 апреля 2017">
+                            <a href="#">
+                                <img src="" alt="Выбор даты заезда">
+                            </a>
+                        </p>
+                        <p>
+                            <label for="departure-date">Дата выезда:</label>
+                            <input id="departure-date" type="text" name="departure-date" placeholder="4 июля 2017">
+                            <a href="#">
+                                <img src="" alt="Выбор даты выезда">
+                            </a>
+                        </p>
+                        <p>
+                            <label for="adults-number">Взрослые:</label>
+                            <input id="adults-number" type="number" name="adults-number" value="2">
+                        </p>
+                        <p>
+                            <label for="children-number">Дети:</label>
+                            <input id="children-number" type="number" name="children-number" value="0">
+                        </p>
+                        <button type="button">Найти</button>
+                    </form>
+                </section>
+            </div>
         </section>
 
         <section>
@@ -107,36 +143,7 @@
         </p>
     </footer>
 
-    <div class="modal">
-        <section>
-            <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-            <form action="https://htmlacademy.ru/intensive/htmlcss" method="get">
-                <p>
-                    <label for="arrival-date">Дата заезда:</label>
-                    <input id="arrival-date" type="text" name="arrival-date" placeholder="24 апреля 2017">
-                    <a href="#">
-                        <img src="" alt="Выбор даты заезда">
-                    </a>
-                </p>
-                <p>
-                    <label for="departure-date">Дата выезда:</label>
-                    <input id="departure-date" type="text" name="departure-date" placeholder="4 июля 2017">
-                    <a href="#">
-                        <img src="" alt="Выбор даты выезда">
-                    </a>
-                </p>
-                <p>
-                    <label for="adults-number">Взрослые:</label>
-                    <input id="adults-number" type="number" name="adults-number" value="2">
-                </p>
-                <p>
-                    <label for="children-number">Дети:</label>
-                    <input id="children-number" type="number" name="children-number" value="0">
-                </p>
-            <button type="button">Найти</button>
-            </form>
-        </section>
-    </div>
+
 
 </body>
 
