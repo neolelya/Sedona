@@ -17,7 +17,7 @@
                         <li><a href="#">Информация</a></li>
                         <li><a href="#">Фото и видео</a></li>
                         <li><a href="#">Карта штата</a></li>
-                        <li><a href="#">Гостиницы</a></li>
+                        <li><a href="hotels.html">Гостиницы</a></li>
                     </ul>
                 </nav>
             </header>
@@ -35,8 +35,8 @@
                     <ul class="features-list">
                         <li>
                             <div class="town-block">
-                                <div>
-                                    <p class="block-header">Настоящий городок</p>
+                                <div class="town-block-description">
+                                    <p class="block-header">Настоящий<br>городок</p>
                                     <span>№1</span>
                                     <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                                 </div>
@@ -59,8 +59,8 @@
                         </li>
                         <li>
                             <div class="bridge-block">
-                                <div>
-                                    <p class="block-header">Там есть мост дьявола</p>
+                                <div class="bridge-block-description">
+                                    <p class="block-header">Там есть<br>мост дьявола</p>
                                     <span>№2</span>
                                     <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                                 </div>
@@ -70,17 +70,17 @@
                         <li>
                             <ul class="list-advantages">
                                 <li class="feature-square">
-                                    <b>Небольшая площадь</b>
+                                    <b>Небольшая<br>площадь</b>
                                     <span>№3</span>
                                     <p>Все достопримечательности находятся очень близко</p>
                                 </li>
                                 <li class="feature-road">
-                                    <b>Красивая дорога</b>
+                                    <b>Красивая<br>дорога</b>
                                     <span>№4</span>
                                     <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                                 </li>
                                 <li class="feature-tourists">
-                                    <b>Мало туристов</b>
+                                    <b>Мало<br>туристов</b>
                                     <span>№5</span>
                                     <p>Большинство едет в гранд каньон и толпится там</p>
                                 </li>
@@ -92,35 +92,33 @@
                 <section class="offer-block">
                     <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
                     <p class="offer-interested">Заинтересовались?</p>
-                    <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+                    <p class="offer-proposal">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
                     <a class="button" href="booking-form.html">Поиск гостиницы в Седоне</a>
                     <div class="offer-modal">
-                        <section class="visually-hidden">
+                        <section class="">
                             <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-                            <form action="https://htmlacademy.ru/intensive/htmlcss" method="get">
-                                <p>
+                            <form class="search-form" action="https://htmlacademy.ru/intensive/htmlcss" method="get">
+                                <p class="search-date">
                                     <label for="arrival-date">Дата заезда:</label>
                                     <input id="arrival-date" type="text" name="arrival-date" placeholder="24 апреля 2017">
-                                    <a href="#">
-                                        <img src="" alt="Выбор даты заезда">
-                                    </a>
+                                    <a href="#" aria-label="Выбор даты заезда"></a>
                                 </p>
-                                <p>
+                                <p class="search-date">
                                     <label for="departure-date">Дата выезда:</label>
                                     <input id="departure-date" type="text" name="departure-date" placeholder="4 июля 2017">
-                                    <a href="#">
-                                        <img src="" alt="Выбор даты выезда">
-                                    </a>
+                                    <a href="#" aria-label="Выбор даты выезда"></a>
                                 </p>
-                                <p>
-                                    <label for="adults-number">Взрослые:</label>
-                                    <input id="adults-number" type="number" name="adults-number" value="2">
+                                <p class="search-people">
+                                    <span>
+                                        <label for="adults-number">Взрослые:</label>
+                                        <input id="adults-number" type="number" name="adults-number" value="2">
+                                    </span>
+                                    <span>
+                                        <label for="children-number">Дети:</label>
+                                        <input id="children-number" type="number" name="children-number" value="0">
+                                    </span>
                                 </p>
-                                <p>
-                                    <label for="children-number">Дети:</label>
-                                    <input id="children-number" type="number" name="children-number" value="0">
-                                </p>
-                                <button type="button">Найти</button>
+                                <button class="search-form-button" type="button">Найти</button>
                             </form>
                         </section>
                     </div>
@@ -134,7 +132,7 @@
 
             <footer class="site-footer">
                 <b>#VisitSedona</b>
-                <ul>
+                <ul class="socials">
                     <li>
                         <a href="https://twitter.com"><img src="img/twitter-icon.svg" alt="Социальная сеть Твиттер" width="17" height="15"></a>
                     </li>
@@ -145,7 +143,7 @@
                         <a href="https://youtube.com"><img src="img/youtube-icon.svg" alt="Социальная сеть Ютуб" width="20" height="16"></a>
                     </li>
                 </ul>
-                <p>
+                <p class="site-creator">
                     Website by
                     <a href="https://htmlacademy.ru/intensive/htmlcss">
                         <img src="img/logo_html.png" alt="Сайт HTML Академия" width="115" height="41">
