@@ -366,12 +366,13 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   width: 576px;
   margin: 0 auto;
-  padding-bottom: 46px;
+  padding-bottom: 132px;
 }
 
 .search-form-wrapper {
   position: absolute;
   left: 315px;
+  top: 70%;
   min-width: 568px;
   min-height: 490px;
   overflow: hidden;
