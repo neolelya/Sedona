@@ -20,4 +20,4 @@ Sedona is an Arizona Tourist Campus Site.
 
 ### Site navigation 
 * Main page - https://neolelya.github.io/sedona/index.html
-* Catalog page - https://neolelya.github.io/nerds/hotels.html
+* Catalog page - https://neolelya.github.io/sedona/hotels.html
