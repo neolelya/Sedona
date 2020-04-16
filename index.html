@@ -5,7 +5,7 @@
         <title>Сайт города Седона</title>
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/min-style.css">
     </head>
 
     <body>
@@ -93,35 +93,38 @@
                     <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
                     <p class="offer-interested">Заинтересовались?</p>
                     <p class="offer-proposal">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-                    <a class="button" href="booking-form.html">Поиск гостиницы в Седоне</a>
-                    <div class="offer-modal">
-                        <section class="">
-                            <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-                            <form class="search-form" action="https://htmlacademy.ru/intensive/htmlcss" method="get">
-                                <p class="search-date">
-                                    <label for="arrival-date">Дата заезда:</label>
-                                    <input id="arrival-date" type="text" name="arrival-date" placeholder="24 апреля 2017">
-                                    <a href="#" aria-label="Выбор даты заезда"></a>
-                                </p>
-                                <p class="search-date">
-                                    <label for="departure-date">Дата выезда:</label>
-                                    <input id="departure-date" type="text" name="departure-date" placeholder="4 июля 2017">
-                                    <a href="#" aria-label="Выбор даты выезда"></a>
-                                </p>
-                                <p class="search-people">
+                    <section class="search-form-wrapper">
+                        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+                        <a class="button search-button" href="booking-form.html">Поиск гостиницы в Седоне</a>
+                        <div class="offer-modal">
+                            <section>
+                                <h3 class="visually-hidden">Поиск гостиницы</h3>
+                                <form class="search-form" action="https://htmlacademy.ru/intensive/htmlcss" method="get">
+                                    <p class="search-date">
+                                        <label for="arrival-date">Дата заезда:</label>
+                                        <input id="arrival-date" class="arrival-date" type="text" name="arrival-date" placeholder="24 апреля 2017">
+                                        <a href="#" aria-label="Выбор даты заезда"></a>
+                                    </p>
+                                    <p class="search-date">
+                                        <label for="departure-date">Дата выезда:</label>
+                                        <input id="departure-date" class="departure-date" type="text" name="departure-date" placeholder="4 июля 2017">
+                                        <a href="#" aria-label="Выбор даты выезда"></a>
+                                    </p>
+                                    <p class="search-people">
                                     <span>
                                         <label for="adults-number">Взрослые:</label>
-                                        <input id="adults-number" type="number" name="adults-number" value="2">
+                                        <input id="adults-number" type="number" name="adults-number" value="2" required>
                                     </span>
-                                    <span>
+                                        <span>
                                         <label for="children-number">Дети:</label>
-                                        <input id="children-number" type="number" name="children-number" value="0">
+                                        <input id="children-number" type="number" name="children-number" value="0" required>
                                     </span>
-                                </p>
-                                <button class="search-form-button" type="button">Найти</button>
-                            </form>
-                        </section>
-                    </div>
+                                    </p>
+                                    <button class="search-form-button" type="submit">Найти</button>
+                                </form>
+                            </section>
+                        </div>
+                    </section>
                 </section>
 
                 <section class="map">
@@ -135,7 +138,7 @@
                 <ul class="socials">
                     <li>
                         <a href="https://twitter.com">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                  width="17px" height="15px" viewBox="0 0 17 15" enable-background="new 0 0 17 15" xml:space="preserve">
                                 <path d="M10.95,0.144c1.685-0.496,2.984,0.27,3.577,1.179c0.673-0.231,1.331-0.481,2.011-0.708
 			c-0.004,0.861-0.522,1.513-0.857,1.768c0.685,0.17,1.304-0.491,1.304-0.491c-0.169,1-1.006,1.788-1.563,2.024
@@ -148,7 +151,7 @@
                     </li>
                     <li>
                         <a href="https://facebook.com">
-                            <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                  width="12px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve">
                                 <path d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z"/>
                             </svg>
@@ -156,7 +159,7 @@
                     </li>
                     <li>
                         <a href="https://youtube.com">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                  width="20px" height="16px" viewBox="0 0 20 16" enable-background="new 0 0 20 16" xml:space="preserve">
                                 <path d="M17,0H3C1.35,0,0,1.35,0,3v10c0,1.65,1.35,3,3,3h14c1.65,0,3-1.35,3-3V3C20,1.35,18.65,0,17,0z
 	 M6.027,11.998V4.002L15.014,8L6.027,11.998z"/>
@@ -172,6 +175,8 @@
                 </p>
             </footer>
         </div>
+
+        <script src="js/min-script.js"></script>
     </body>
 
 </html>
